@@ -1,0 +1,53 @@
+/* Styles para ToDo List */
+:root{
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --muted:#666;
+    --accent:#0b5fff;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    margin:0;
+    color:#111;
+}
+.container{
+    max-width:900px;
+    margin:28px auto;
+    padding:16px;
+}
+h1{margin-bottom:8px}
+.new-task, .tasks{background:var(--card);padding:12px;border-radius:8px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+label{display:block;margin-bottom:8px}
+input[type="text"], textarea, select{width:100%;padding:8px;border:1px solid #ddd;border-radius:4px}
+.form-actions{display:flex;gap:8px;margin-top:8px}
+button{cursor:pointer;padding:8px 10px;border-radius:4px;border:0}
+button.btn{padding:6px 8px}
+button#addBtn{background:var(--accent);color:#fff}
+.tasks-list{display:flex;flex-direction:column;gap:8px}
+.empty{color:var(--muted);margin:8px 0}
+.task-card{display:flex;flex-direction:column;padding:10px;border:1px solid #eee;border-radius:6px;background:#fff}
+.task-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.task-title{font-weight:600}
+.task-details{color:var(--muted);margin-bottom:8px}
+.task-actions{display:flex;gap:8px}
+.btn.edit{background:#ffd54f}
+.btn.delete{background:#ff6b6b;color:#fff}
+.btn.save{background:#4caf50;color:#fff}
+.btn.cancel{background:#999;color:#fff}
+
+/* Priority badges */
+.task-priority{padding:4px 8px;border-radius:999px;font-size:12px;color:#fff}
+.priority-1{background:#e53935} /* Alta */
+.priority-2{background:#fb8c00} /* Media */
+.priority-3{background:#43a047} /* Baja */
+
+/* Edit form inside card */
+.edit-form{display:flex;flex-direction:column;gap:8px}
+.edit-form input, .edit-form textarea, .edit-form select{width:100%}
+
+@media(min-width:700px){
+    .new-task form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .new-task label:nth-child(2){grid-column:1/3}
+    .form-actions{grid-column:1/3}
+}
