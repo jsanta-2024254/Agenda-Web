@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda - Nuevo contacto</title>
+    <link rel="stylesheet" href="../Styles/contactos.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="Contactos.html">Agenda</a>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <h3>Nuevo contacto</h3>
+      <p class="text-muted">Formulario visual — no agrega realmente el contacto.</p>
+      <form id="newContactForm" class="form">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" required />
+        </div>
+        <div class="form-group">
+          <label>Correo</label>
+          <input type="email" />
+        </div>
+        <div class="form-group">
+          <label>Teléfono</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Dirección</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Notas</label>
+          <textarea rows="3"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Guardar (visual)</button>
+          <a href="Contactos.html" class="btn-link">Cancelar</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="../scripts/nuevoContacto.js"></script>
+  </body>
+</html></content>
