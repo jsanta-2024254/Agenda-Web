@@ -7,7 +7,6 @@ const contactos = [
     address: 'Dirección 1',
     notes: 'Notas 1',
     favorite: false,
-    avatar: 'https://via.placeholder.com/80'
   },
   {
     id: 2,
@@ -17,7 +16,6 @@ const contactos = [
     address: 'Dirección 2',
     notes: 'Notas 2',
     favorite: true,
-    avatar: 'https://via.placeholder.com/80'
   },
   {
     id: 3,
@@ -27,11 +25,9 @@ const contactos = [
     address: 'Dirección 3',
     notes: 'Notas 3',
     favorite: false,
-    avatar: 'https://via.placeholder.com/80'
   }
 ];
 
-// Function to get contact by ID
 function getContactById(id) {
   return contactos.find(contacto => contact.id === id);
-}
+} 
