@@ -25,9 +25,27 @@ const contactos = [
     address: 'Dirección 3',
     notes: 'Notas 3',
     favorite: false,
+  },
+  {
+    id: 4,
+    name: 'Jett',
+    email: 'jett@valorant.com',
+    phone: '+502 6678 7895',
+    address: 'Dirección 4',
+    notes: 'Notas 4',
+    favorite: true,
+  },
+  {
+    id: 5,
+    name: 'Sage',
+    email: 'sage@valorant.com',
+    phone: '+502 6789 7896',
+    address: 'Dirección 5',
+    notes: 'Notas 5',
+    favorite: false,
   }
 ];
 
 function getContactById(id) {
-  return contactos.find(contacto => contact.id === id);
+  return contactos.find(contacto => contacto.id === id);
 } 
