@@ -1,39 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
-    <link rel="stylesheet" href="../Styles/contactos.css"> 
-</head>
-<body>
-    <div class="container">
-        <h1>Contactos</h1>
-        <ul class="contact-list">
-            <li class="contact-item">
-                <div class="contact-name">Juan Pérez</div>
-                <div class="contact-info">📧 juan.perez@email.com | 📱 +34 612 345 678</div>
-            </li>
-            <li class="contact-item">
-                <div class="imagen-contacto">
-                    <img src="../Images/contactoImagen.jpg" alt="imagen contacto" width="50" height="50">
-            </div>
-                    <div class="contact-name">María García</div>
-                <div class="contact-info">📧 maria.garcia@email.com | 📱 +34 623 456 789</div>
-            </li>
-            <li class="contact-item">
-                <div class="contact-name">Carlos López</div>
-                <div class="contact-info">📧 carlos.lopez@email.com | 📱 +34 634 567 890</div>
-            </li>
-            <li class="contact-item">
-                <div class="contact-name">Ana Rodríguez</div>
-                <div class="contact-info">📧 ana.rodriguez@email.com | 📱 +34 645 678 901</div>
-            </li>
-            <li class="contact-item">
-                <div class="contact-name">Pedro Martínez</div>
-                <div class="contact-info">📧 pedro.martinez@email.com | 📱 +34 656 789 012</div>
-            </li>
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda - Contactos</title>
+    <link rel="stylesheet" href="../Styles/contactos.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="Contactos.html">Agenda</a>
+        <div class="nav-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="Contactos.html">Contactos</a></li>
+            <li class="nav-item"><a class="nav-link" href="favorites.html">Favoritos</a></li>
+            <li class="nav-item"><a class="nav-link" href="todo.html">ToDo</a></li>
+            <li class="nav-item"><a class="nav-link" href="profile.html">Perfil</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <div class="header">
+        <h3>Contactos</h3>
+        <a class="btn" href="new_contact.html">+ Nuevo contacto</a>
+      </div>
+
+      <div id="contactsList" class="contact-list">
+        <div class="contact-item">
+          <div class="contact-name"> vegata </div>
+          <div class="contact-info">vegata@email.com | +502 6122 7812</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-name">son goku</div>
+          <div class="contact-info">son.goku@email.com | +502 6233 7898</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-name">Jeffrey Epstein</div>
+          <div class="contact-info">Jeffrey.Epstein@email.com | +502 6345 7892</div>
+        </div>
+      </div>
     </div>
-</body>
-</html
+  </body>
+</html>
